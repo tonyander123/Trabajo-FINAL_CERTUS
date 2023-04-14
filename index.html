@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1497ab087e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <header>
+    <h1>Copa y Vino</h1>
+    <h2>Disfruta el sabor de la vida en cada sorbo</h2>
+  </header>
+
+  <!--Navegador del catalago -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contactenos.html">Contactenos</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button
+            class="btn btn-outline-success"
+            type="submit"
+            data-bs-toggle="modal"
+            data-bs-target="#ventanaCarrito"
+          >
+            carrito
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div id="ventanaCarrito" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Carrito</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p>Su carrito está actualmente vacio</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary">Limpiar</button>
+          <button type="button" class="btn btn-primary">
+            Finalizar compra
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <nav>
+    <ul>
+      <li><a href="">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contactenos.html">Contactenos</a></li>
+    </ul>
+  </nav> -->
+
+  <!--Sección principal catalago-->
+  <main>
+    <section id="catalogo">
+      <article>
+        <picture>
+          <img
+            src="https://th.bing.com/th/id/OIP._wWJgtrDK-kRTYEG_LfqlgHaHa?w=189&h=189&c=7&r=0&o=5&pid=1.7"
+            class="img-fluid"
+            alt="Pisco Tabernero"
+            id="imgProducto"
+          />
+        </picture>
+
+        <h3>Pisco Tabernero 750ml</h3>
+        <p>
+          <span class="precio">s/. 60.00</span>
+        </p>
+        <button class="botonMenu">Agregar al carrito</button>
+      </article>
+
+      <article>
+        <picture>
+          <img
+            src="https://plazavea.vteximg.com.br/arquivos/ids/529766-1000-1000/408462.jpg?v=637419662193630000"
+            class="img-fluid"
+            alt="Vodka Ruskaya"
+            id="imgProducto"
+          />
+        </picture>
+
+        <h3>Vodka Ruskayya 750ml</h3>
+        <p>
+          <span class="precio">s/. 55.00</span>
+        </p>
+        <button class="botonMenu">Agregar al carrito</button>
+      </article>
+
+      <article>
+        <picture>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKoUEVZAADbIG2VXWTp79bq5wzGKiT2P_bSQ&usqp=CAU"
+            class="img-fluid"
+            alt="Etiqueta Roja"
+            id="imgProducto"
+          />
+        </picture>
+
+        <h3>Etiqueta Roja 750ml</h3>
+        <p>
+          <span class="precio">s/. 120.00</span>
+        </p>
+        <button class="botonMenu">Agregar al carrito</button>
+      </article>
+
+      <article>
+        <picture>
+          <img
+            src="https://plazavea.vteximg.com.br/arquivos/ids/6760537-450-450/49731.jpg?v=637805496862200000"
+            class="img-fluid"
+            alt="Guarana"
+            id="imgProducto"
+          />
+        </picture>
+
+        <h3>Guarana 2Lt</h3>
+        <p>
+          <span class="precio">s/. 10.00</span>
+        </p>
+        <button class="botonMenu">Agregar al carrito</button>
+      </article>
+    </section>
+  </main>
+
+  <div class="container_carrito">
+    <div id="root"></div>
+    <div class="sidebar">
+      <div class="head">
+        <p>My cart</p>
+      </div>
+      <div id="cartItem">Your cart is empty</div>
+      <div class="foot">
+        <h3>Total</h3>
+        <h2 id="total">S/0.00</h2>
+      </div>
+    </div>
+  </div>
+
+  <!--Footer de la pagina-->
+  <footer>
+    <div class="colum-1">
+      <h3>Conócenos</h3>
+      <a href="#">Contacto</a>
+      <a href="#">Legales</a>
+      <a href="#">Libro de Reclamaciones</a>
+      <a href="#">Eventos y Bodas</a>
+      <a href="#">Política de Privacidad</a>
+    </div>
+    <div class="colum-2">
+      <h3>Mi cuenta</h3>
+      <form action="">
+        <input type="text" placeholder="Introduzca su email" />
+        <br />
+        <button type="submit">Iniciar sesión</button>
+      </form>
+    </div>
+
+    <div class="colum-3">
+      <h3>Redes sociales</h3>
+      <div class="social-icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-tiktok"></i>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.min.js"></script>
+
+  <body></body>
+</html>
